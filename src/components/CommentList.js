@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 class CommentList extends Component {
   renderComments() {
     return this.props.comments.map((comment, index) => {
-
       return <li key={index}>{comment}</li>
     })
   }
