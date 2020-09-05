@@ -9,7 +9,6 @@ class CommentList extends Component {
   }
 
   render() {
-
     return (
       <div>
         <h4>Comments List</h4>
@@ -25,7 +24,6 @@ function mapStateToProps(state) {
   return {comments: state.comments};
 }
 export default connect(mapStateToProps)(CommentList);
-
 
 // export default () => {
 //   return (
