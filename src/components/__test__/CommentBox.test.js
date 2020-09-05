@@ -17,11 +17,11 @@ afterEach(() => {
   wrapped.unmount();
 })
 
-it('has a textarea and a button', () => {
-  // console.log(wrapped.find("textarea"));
-  // console.log(wrapped.find("button"));
+it('has a textarea and 2 buttons', () => {
+  console.log(wrapped.find("textarea"));
+  console.log(wrapped.find("button"));
   expect(wrapped.find('textarea').length).toEqual(1);
-  expect(wrapped.find('button').length).toEqual(1);
+  expect(wrapped.find('button').length).toEqual(2);
 });
 
 describe('The text area test', () => {
