@@ -16,8 +16,8 @@ class App extends Component {
   renderHeader () {
     return (
       <ul>
-        <li><Link path='/'>Home</Link></li>
-        <li><Link path='/post'>Post a comment</Link></li>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/post'>Post a comment</Link></li>
         <li>{this.renderButton()}</li>
       </ul>
     )
@@ -26,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <p>{this.renderHeader()}</p>
+        {this.renderHeader()}
         <Route path='/' exact component={CommentList} />
         <Route path="/post" component={CommentBox} />
       </div>

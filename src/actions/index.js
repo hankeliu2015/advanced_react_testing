@@ -22,5 +22,4 @@ export function changeAuth(isLoggedIn) {
     type: CHANGE_AUTH,
     payload: isLoggedIn
   }
-
 }
