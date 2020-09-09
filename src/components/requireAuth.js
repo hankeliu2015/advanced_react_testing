@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 export default ChildComponent => {
@@ -19,7 +19,7 @@ export default ChildComponent => {
     }
 
     render() {
-      return <ChildComponent />
+      return <ChildComponent {...this.props} />
     }
   }
 
